@@ -1,0 +1,903 @@
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~
+$ git --version
+git version 2.54.0.windows.1
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~
+$ cd Desktop
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop
+$ mkdir git-one
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop
+$ cd git-one
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one
+$ touch.txt
+bash: touch.txt: command not found
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one
+$ touch one.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one
+$ touch two.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one
+$ mkdir myFolder
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one
+$ cd myFolder
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one/myFolder
+$ touch three.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one/myFolder
+$ open.
+bash: open.: command not found
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one/myFolder
+$ cd ..
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one
+$ open .
+bash: open: command not found
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one
+$ open.
+bash: open.: command not found
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one
+$ open .
+bash: open: command not found
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one
+$ explorer .
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one
+$ git init
+Initialized empty Git repository in C:/Users/
+Krishna/Desktop/git-one/.git/
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one (master)
+$ ls
+myFolder/  one.txt  two.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one (master)
+$ ls -la
+total 10
+drwxr-xr-x 1 Krishna 197121 0 Oct 23 20:27 ./
+drwxr-xr-x 1 Krishna 197121 0 Oct 23 20:19 ../
+drwxr-xr-x 1 Krishna 197121 0 Oct 23 20:27 .git/
+drwxr-xr-x 1 Krishna 197121 0 Oct 23 20:22 myFolder/
+-rw-r--r-- 1 Krishna 197121 3 Oct 23 20:26 one.txt
+-rw-r--r-- 1 Krishna 197121 3 Oct 23 20:26 two.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one (master)
+$ ls -a
+./  ../  .git/  myFolder/  one.txt  two.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one (master)
+$ ls -la
+total 10
+drwxr-xr-x 1 Krishna 197121 0 Oct 23 20:27 ./
+drwxr-xr-x 1 Krishna 197121 0 Oct 23 20:19 ../
+drwxr-xr-x 1 Krishna 197121 0 Oct 23 20:27 .git/
+drwxr-xr-x 1 Krishna 197121 0 Oct 23 20:22 myFolder/
+-rw-r--r-- 1 Krishna 197121 3 Oct 23 20:26 one.txt
+-rw-r--r-- 1 Krishna 197121 3 Oct 23 20:26 two.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one (master)
+$ ^C
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-one (master)
+$ cd ../
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop
+$ git clone https://github.com/Misterunknown024/git-journey.git
+Cloning into 'git-journey'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from
+0)
+Receiving objects: 100% (6/6), done.
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop
+$ ls
+ Chess.lnk*     Godot.exe*                  'VS Code.lnk'*
+ Coding.lnk*   'Google Keep.lnk'*            desktop.ini
+ Discord.lnk*   Krishna/                     git-journey/
+ GitHub.lnk*   'Notepad++ for raylib.lnk'*   git-one/
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop
+$ ls -a
+ ./             GitHub.lnk*                 'VS Code.lnk'*
+ ../            Godot.exe*                   desktop.ini
+ Chess.lnk*    'Google Keep.lnk'*            git-journey/
+ Coding.lnk*    Krishna/                     git-one/
+ Discord.lnk*  'Notepad++ for raylib.lnk'*
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop
+$ cd git-journey
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ ls
+one.txt  two.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ ls -a
+./  ../  .git/  one.txt  two.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ explorer .
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working direct
+ory)
+        modified:   one.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working direct
+ory)
+        modified:   one.txt
+        modified:   two.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ mkdir myFolder
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ cd myFolder
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey/myFolder (main)
+$ touch three.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey/myFolder (main)
+$ cd ..
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working direct
+ory)
+        modified:   one.txt
+        modified:   two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git add --all
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        modified:   two.txt
+
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git reset
+Unstaged changes after reset:
+M       one.txt
+M       two.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working direct
+ory)
+        modified:   one.txt
+        modified:   two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        myFolder/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git -A
+unknown option: -A
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<v
+alue>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--inf
+o-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-object
+s] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=
+<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=
+<name>=<envvar>]
+           <command> [<args>]
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git add -A
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        modified:   two.txt
+
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        modified:   two.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working direct
+ory)
+        deleted:    two.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        four.txt
+
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git add .
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   four.txt
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        deleted:    two.txt
+
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   four.txt
+        new file:   myFolder/three.txt
+        modified:   one.txt
+        deleted:    two.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working direct
+ory)
+        deleted:    one.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        five.txt
+
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git add .
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    one.txt -> five.txt
+        new file:   four.txt
+        new file:   myFolder/three.txt
+        deleted:    two.txt
+
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git commit - m "I have made some changes to files"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'm' did not match any file(s) known to git
+error: pathspec 'I have made some changes to files' did not match a
+ny file(s) known to git
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git commit -m "I have made some changes to files"
+[main 8606078] I have made some changes to files
+ 4 files changed, 3 insertions(+), 1 deletion(-)
+ rename one.txt => five.txt (66%)
+ create mode 100644 four.txt
+ create mode 100644 myFolder/three.txt
+ delete mode 100644 two.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git rm four.txt
+rm 'four.txt'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    four.txt
+
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git reset
+Unstaged changes after reset:
+D       four.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git reset --hard
+HEAD is now at 8606078 I have made some changes to files
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git rm four.txt
+error: the following file has local modifications:
+    four.txt
+(use --cached to keep the file, or -f to force removal)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git rm -f four.txt
+rm 'four.txt'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git reset --hard
+HEAD is now at 8606078 I have made some changes to files
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working direct
+ory)
+        modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git rm --cached four.txt
+rm 'four.txt'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    four.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        four.txt
+
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git reset --hard
+HEAD is now at 8606078 I have made some changes to files
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git rm -r myfolder
+fatal: pathspec 'myfolder' did not match any files
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git rm -r myFolder
+rm 'myFolder/three.txt'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    myFolder/three.txt
+
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git reset --hard
+HEAD is now at 8606078 I have made some changes to files
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git rm myFolder
+fatal: not removing 'myFolder' recursively without -r
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git ;og
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<v
+alue>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--inf
+o-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-object
+s] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=
+<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=
+<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an exi
+sting one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   restore    Restore working tree files
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced
+a bug
+   diff       Show changes between commits, commit and working tree
+, etc
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   backfill   Download missing objects in a partial clone
+   branch     List, create, or delete branches
+   commit     Record changes to the repository
+   history    EXPERIMENTAL: Rewrite history
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   reset      Set `HEAD` or the index to a known state
+   switch     Switch branches
+   tag        Create, list, delete or verify tags
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a
+ local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+bash: og: command not found
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git log
+commit 860607865f917b18c76c31fa3c694c1b5029e875 (HEAD -> main)
+Author: Krishu <misterunknown024@gmail.com>
+Date:   Fri Oct 23 21:01:27 2026 +0530
+
+    I have made some changes to files
+
+commit 6ed07246c18629c51b93b40f9ebe011b3105d403 (origin/main, origi
+n/HEAD)
+Author: Krishu <158143427+Misterunknown024@users.noreply.github.com
+>
+Date:   Fri Oct 23 20:39:33 2026 +0530
+
+    Add new file two.txt with content 'two'
+
+commit d04c45d463e7b86dbd1e2a7385001d456084f8ac
+Author: Krishu <158143427+Misterunknown024@users.noreply.github.com
+>
+Date:   Fri Oct 23 20:38:59 2026 +0530
+
+    Add one.txt with initial content 'one'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git log --oneline
+8606078 (HEAD -> main) I have made some changes to files
+6ed0724 (origin/main, origin/HEAD) Add new file two.txt with conten
+t 'two'
+d04c45d Add one.txt with initial content 'one'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$  git branch
+* main
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git branch development
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git branch
+  development
+* main
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git checkout development
+Switched to branch 'development'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git status
+On branch development
+nothing to commit, working tree clean
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git add .
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git commit -m "I created six.txt and enter the data"
+[development 6ee902b] I created six.txt and enter the data
+ 1 file changed, 1 insertion(+)
+ create mode 100644 six.txt.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git checkout development
+Switched to branch 'development'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git add .
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git commit -m "I have made add 55 in five.txt"
+[main 5fbcca8] I have made add 55 in five.txt
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git checkout development
+Switched to branch 'development'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git merge main -m "Merging main into develpoment"
+Merge made by the 'ort' strategy.
+ five.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git merge development -m "Merging development to main"
+Updating 5fbcca8..2e501a6
+Fast-forward (no commit created; -m option ignored)
+ six.txt.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 six.txt.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git branch staging
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git checkout staging
+Switched to branch 'staging'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (staging)
+$ git status
+On branch staging
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working direct
+ory)
+        modified:   four.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (staging)
+$ git add .
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (staging)
+$ git commit -m "I have add 4 and its now 444"
+[staging 71cf742] I have add 4 and its now 444
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (staging)
+$ git checkout development
+Switched to branch 'development'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git add .
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git commit -m "added 444 in 44"
+On branch development
+nothing to commit, working tree clean
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git add .
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git commit -m "I accutally add 444 in 44
+> "
+[development 5cca44f] I accutally add 444 in 44
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git merge staging
+Auto-merging four.txt
+CONFLICT (content): Merge conflict in four.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development|MERGING)
+$ git add .
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development|MERGING)
+$ git commit -m "Merg confilit solved"
+[development a52b4f3] Merg confilit solved
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git checkout staging
+Switched to branch 'staging'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (staging)
+$ git merge development
+Updating 71cf742..a52b4f3
+Fast-forward
+ four.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (staging)
+$ git status
+On branch staging
+nothing to commit, working tree clean
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (staging)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git checkout staging
+Switched to branch 'staging'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (staging)
+$ git checout main
+git: 'checout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (staging)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git merge staging
+Updating 2e501a6..a52b4f3
+Fast-forward
+ four.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git log --oneline
+a52b4f3 (HEAD -> main, staging, development) Merg confilit solved
+5cca44f I accutally add 444 in 44
+71cf742 I have add 4 and its now 444
+2e501a6 Merging main into develpoment
+5fbcca8 I have made add 55 in five.txt
+6ee902b I created six.txt and enter the data
+8606078 I have made some changes to files
+6ed0724 (origin/main, origin/HEAD) Add new file two.txt with conten
+t 'two'
+d04c45d Add one.txt with initial content 'one'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git add .
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git commit -m "I upate five.txt"
+[main c261b91] I upate five.txt
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git log --oneline
+c261b91 (HEAD -> main) I upate five.txt
+a52b4f3 (staging, development) Merg confilit solved
+5cca44f I accutally add 444 in 44
+71cf742 I have add 4 and its now 444
+2e501a6 Merging main into develpoment
+5fbcca8 I have made add 55 in five.txt
+6ee902b I created six.txt and enter the data
+8606078 I have made some changes to files
+6ed0724 (origin/main, origin/HEAD) Add new file two.txt with conten
+t 'two'
+d04c45d Add one.txt with initial content 'one'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ ^C
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git checkout c261b91
+Note: switching to 'c261b91'.
+
+You are in 'detached HEAD' state. You can look around, make experim
+ental
+changes and commit them, and you can discard any commits you make i
+n this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, yo
+u may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead
+ to false
+
+HEAD is now at c261b91 I upate five.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey ((c261b91...))
+$ git checkout 5fbcca8
+Previous HEAD position was c261b91 I upate five.txt
+HEAD is now at 5fbcca8 I have made add 55 in five.txt
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey ((5fbcca8...))
+$ git checkout main
+Previous HEAD position was 5fbcca8 I have made add 55 in five.txt
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git log --oneline
+c261b91 (HEAD -> main) I upate five.txt
+a52b4f3 (staging, development) Merg confilit solved
+5cca44f I accutally add 444 in 44
+71cf742 I have add 4 and its now 444
+2e501a6 Merging main into develpoment
+5fbcca8 I have made add 55 in five.txt
+6ee902b I created six.txt and enter the data
+8606078 I have made some changes to files
+6ed0724 (origin/main, origin/HEAD) Add new file two.txt with conten
+t 'two'
+d04c45d Add one.txt with initial content 'one'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git diff c261b91 a52b4f3
+diff --git a/five.txt b/five.txt
+index 419e70d..b3f4628 100644
+--- a/five.txt
++++ b/five.txt
+@@ -1,4 +1,3 @@
+ one
+ 11
+-55
+-hello
+\ No newline at end of file
++55
+\ No newline at end of file
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git push origin main
+Enumerating objects: 27, done.
+Counting objects: 100% (27/27), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (26/26), 2.03 KiB | 346.00 KiB/s, done.
+Total 26 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), done.
+To https://github.com/Misterunknown024/git-journey.git
+   6ed0724..c261b91  main -> main
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (main)
+$ git checkout development
+Switched to branch 'development'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git push origin development
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'development' on GitHub by visiti
+ng:
+remote:      https://github.com/Misterunknown024/git-journey/pull/n
+ew/development
+remote:
+To https://github.com/Misterunknown024/git-journey.git
+ * [new branch]      development -> development
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (development)
+$ git checkout staging
+Switched to branch 'staging'
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (staging)
+$ git push origin staging
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'staging' on GitHub by visiting:
+remote:      https://github.com/Misterunknown024/git-journey/pull/n
+ew/staging
+remote:
+To https://github.com/Misterunknown024/git-journey.git
+ * [new branch]      staging -> staging
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (staging)
+$ ^C
+
+Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (staging)
+$
