@@ -901,3 +901,182 @@ $ ^C
 
 Krishna@DESKTOP-VILFI4T MINGW64 ~/Desktop/git-journey (staging)
 $
+=================================================================
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git add .
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git commit -m "added heyeyyy"
+[main 8aeaa55] added heyeyyy
+ 2 files changed, 8 insertions(+), 2 deletions(-)
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git log --oneline
+8aeaa55 (HEAD -> main) added heyeyyy
+be7f21c (origin/main, origin/HEAD) Merge branch 'staging' its just my files
+55e6c5f (staging) I have added a file call oldlogs
+c261b91 I upate five.txt
+a52b4f3 (origin/staging, origin/development) Merg confilit solved
+5cca44f I accutally add 444 in 44
+71cf742 I have add 4 and its now 444
+2e501a6 Merging main into develpoment
+5fbcca8 I have made add 55 in five.txt
+6ee902b I created six.txt and enter the data
+8606078 I have made some changes to files
+6ed0724 Add new file two.txt with content 'two'
+d04c45d Add one.txt with initial content 'one'
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git revert 8aeaa55
+[main fd3c9f9] Revert "added heyeyyy"
+ 2 files changed, 2 insertions(+), 8 deletions(-)
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git log --oneline
+fd3c9f9 (HEAD -> main) Revert "added heyeyyy"
+8aeaa55 added heyeyyy
+be7f21c (origin/main, origin/HEAD) Merge branch 'staging' its just my files
+55e6c5f (staging) I have added a file call oldlogs
+c261b91 I upate five.txt
+a52b4f3 (origin/staging, origin/development) Merg confilit solved
+5cca44f I accutally add 444 in 44
+71cf742 I have add 4 and its now 444
+2e501a6 Merging main into develpoment
+5fbcca8 I have made add 55 in five.txt
+6ee902b I created six.txt and enter the data
+8606078 I have made some changes to files
+6ed0724 Add new file two.txt with content 'two'
+d04c45d Add one.txt with initial content 'one'
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git branch
+  development
+* main
+  staging
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git branch feature
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git switch feature
+Switched to branch 'feature'
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (feature)
+$ git add .
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (feature)
+$ git commit -m "addede somthing unknown"
+[feature 1e731b1] addede somthing unknown
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (feature)
+$ git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git add .
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git commit -m "dark mode ui"
+[main 3f51991] dark mode ui
+ 1 file changed, 2 insertions(+)
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git switch feature
+Switched to branch 'feature'
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (feature)
+$ git rebase main
+Successfully rebased and updated refs/heads/feature.
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (feature)
+$ git status
+On branch feature
+nothing to commit, working tree clean
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (feature)
+$ git git switch development
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (feature)
+$ git switch development
+Switched to branch 'development'
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (development)
+$ git status
+On branch development
+nothing to commit, working tree clean
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (development)
+$ git switch main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git commit -m "lasest changes"
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git stwich development
+git: 'stwich' is not a git command. See 'git --help'.
+
+The most similar command is
+        switch
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (main)
+$ git switch development
+Switched to branch 'development'
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (development)
+$ git push origin development
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 382 bytes | 382.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Misterunknown024/git-journey.git
+   a52b4f3..1d972ce  development -> development
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (development)
+$ git switch feature
+Switched to branch 'feature'
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (feature)
+$ git push origin feature
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (11/11), 1.05 KiB | 268.00 KiB/s, done.
+Total 11 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/Misterunknown024/git-journey/pull/new/feature
+remote:
+To https://github.com/Misterunknown024/git-journey.git
+ * [new branch]      feature -> feature
+
+Krishna@DESKTOP-VILFI4T UCRT64 ~/Desktop/git-journey (feature)
+$
+
